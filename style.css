@@ -1,0 +1,40 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 9 oct. 2022, 01:06:38
+    Author     : liamb
+*/
+
+:root {
+    --background: #1a2b34;
+    --gray: #334651;
+}
+
+body {
+    background: var(--background);
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    text-align: center;
+    left: calc(40% - 10px);
+    border: 10px darkblue ridge;
+    width: border-box;
+    margin: 10px;
+    padding: 10px;
+}
+
+#content {
+    color: #66ccff;
+    border: 1px #0099ff solid;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+img {
+    position: absolute;
+    left: calc(40% - 50px);
+}
