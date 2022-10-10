@@ -17,14 +17,13 @@ body {
     margin: 0;
 }
 
-.container {
+.container{
     position: absolute;
-    text-align: center;
-    left: calc(40% - 10px);
+    margin-left: 41.5%;
     border: 10px darkblue ridge;
     width: border-box;
-    margin: 10px;
     padding: 10px;
+    text-align: center;
 }
 
 #content {
@@ -34,7 +33,35 @@ body {
     padding: 20px;
 }
 
-img {
+#index2-content {
     position: absolute;
-    left: calc(40% - 50px);
+    color: #66ccff;
+    border: 2px #0099ff solid;
+    width: 70px;
+    border-radius: 50px;
+    border-collapse: collapse;
+    padding: 20px;
+    margin-left: 50%;
+    margin-right: 50%;
+    text-align: center;
+    top: 90%;
+}
+
+#page-2-content {
+    position: absolute;
+    color: #66ccff;
+    border: 2px #0099ff solid;
+    width: 70px;
+    border-radius: 50px;
+    border-collapse: collapse;
+    padding: 20px;
+    margin-left: 50%;
+    margin-right: 50%;
+    text-align: center;
+}
+
+
+img {
+    margin-left: 42%;
+    right: 60%;
 }
