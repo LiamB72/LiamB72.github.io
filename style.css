@@ -13,24 +13,19 @@ and open the template in the editor.
 
 body {
     background: var(--background);
-    margin: 0;
 }
 
-div {
+div.table {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .table_no1 {
     text-align: center; 
     border-collapse:  inherit; 
     font-size: 25px;
-    width: 25%;
-}
-
-#link {
-    font-size: 25px;
-    font-family: monospace;
+    width: auto;
 }
 
 .cell {
@@ -39,4 +34,24 @@ div {
 }
 .cell_caption {
     width: auto;
+}
+
+#link {
+    position: fixed;
+    top: 75%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: arial;
+}
+
+img {
+    position: absolute;
+    bottom: 30px;
+    left: 42%;
+    z-index: -1;
+}
+#imp {
+    position: absolute;
+    left: 42%
 }
