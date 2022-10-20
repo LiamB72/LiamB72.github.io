@@ -25,13 +25,14 @@ div {
     text-align: center; 
     border-collapse:  collapse; 
     font-size: 25px;
-    width: auto;
+    width: 70%;
 }
 
 #link {
     font-size: 25px;
     font-family: monospace;
 }
+
 .cell {
     border: 5px #0066ff ridge;
 }
