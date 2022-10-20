@@ -33,5 +33,5 @@ div {
     font-family: monospace;
 }
 .cell {
-    style="border: 5px #0066ff ridge";
+    border: 5px #0066ff ridge;
 }
