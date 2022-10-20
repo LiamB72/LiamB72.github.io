@@ -32,3 +32,6 @@ div {
     font-size: 25px;
     font-family: monospace;
 }
+.Cell {
+    style="border: 5px #0066ff ridge";
+}
