@@ -23,9 +23,9 @@ div {
 
 .table_no1 {
     text-align: center; 
-    border-collapse:  collapse; 
+    border-collapse:  inherit; 
     font-size: 25px;
-    width: 70%;
+    width: 25%;
 }
 
 #link {
@@ -35,4 +35,8 @@ div {
 
 .cell {
     border: 5px #0066ff ridge;
+    margin-left: 15%;
+}
+.cell_caption {
+    width: auto;
 }
