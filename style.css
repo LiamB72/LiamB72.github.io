@@ -17,6 +17,8 @@ body {
 }
 
 .table {
+    margin: 10px;
+    padding: 5px;
     border: 2px rgb(71, 71, 206) solid;
     background-color: #527991;
     width: auto; 
@@ -38,6 +40,7 @@ body {
     text-align: center;
     font-size: 20px;
     font-family: arial;
+    margin-top: 5%;
 }
 .tnsi {
     display: block;
