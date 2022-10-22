@@ -24,10 +24,11 @@ body {
     left: 35%;
     padding-top: 50px;
     padding-left: 50px;
+}
+.center {
     display: flex;
     justify-content: center;
 }
-
 .container {
     position: relative;
     width: var(--container-width);
@@ -138,4 +139,10 @@ body {
 
 .container.slide .container.duplicate .row:nth-child(2n) {
     --direction: 1
+}
+
+.linky {
+    text-align: center;
+    font-size: 20px;
+    font-family: arial;
 }
