@@ -1,0 +1,173 @@
+body {
+    background-color: rgb(28, 60, 102);
+    margin: 0;
+}
+
+#menu {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#menu-items {
+    margin-left: 8vw;
+    position: relative;
+    z-index: 2;
+}
+
+#menu-items:hover > .menu-item {
+    opacity: 0.3;
+    font-size: 5vw;
+    width: min-content;
+    height: max-content;
+    margin: 0;
+}
+#menu-items:hover > .menu-item:hover {
+    opacity: 1;
+    font-size: 6vw;
+    width: min-content;
+    height: max-content;
+    margin: 0;
+}
+
+.menu-item {
+    width: min-content;
+    height: max-content;
+    margin: 0;
+    color: white;
+    font-size: 6vw;
+    font-family: "Ibarra Real Nova", serif;
+
+    display: block;
+    text-decoration: none;
+    padding: 0.25rem 0;
+    transition: opacity 400ms ease;
+    transition: font-size 100ms ease-out;
+}
+
+#menu-bg-pattern {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.1) 9%,
+        transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+    
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+
+    transition: opacity 800ms ease, background-size 800ms ease;
+}
+
+#menu-items:hover ~ #menu-bg-pattern {
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
+    
+}
+
+#menu[data-active-index="0"] > #menu-bg-pattern {
+    background-position: 0% -25%;
+}
+
+#menu[data-active-index="1"] > #menu-bg-pattern {
+    background-position: 0% -50%;
+}
+
+#menu[data-active-index="2"] > #menu-bg-pattern {
+    background-position: 0% -75%;
+}
+
+#menu[data-active-index="3"] > #menu-bg-pattern {
+    background-position: 0% -100%;
+}
+
+
+/*
+    This is for the about page
+*/
+
+*{
+    margin: 0;
+    font-family: "Fira Code Retina", sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    background: #4a4564;
+    position: relative;
+}
+.container{
+    height: fit-content;
+    width: 100%;
+    padding: 0 8%;
+    background: #131c53;
+    position: relative;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 6vw;
+    background: #4d42eb56;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.nav-links{
+    padding: 20px 0;
+}
+
+.nav-links li{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #ffff;
+    padding: 1px 0;
+}
+
+.nav-links li a:hover{
+    text-decoration: none;
+    background: #eb42422d;
+    color: rgb(156, 156, 156);
+    border-radius: 3px;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: #eb4242;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 400ms ease-out;
+}
+.nav-links li a:hover:after{
+    width: 100%;
+}
+
+.btn{
+    background: #eb4242;
+    color: #ffff;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
