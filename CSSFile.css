@@ -1,5 +1,14 @@
+:root {
+    --red: #EA5E5E;
+    --yellow: #F7BA3E;
+    --blue: #56B3B4;
+    --purple: #BF85BF;
+    --background: #1A2B34;
+    --gray: #334651;
+}
+
 body {
-    background-color: rgb(28, 60, 102);
+    background-color: var(--background);
     margin: 0;
 }
 
@@ -59,7 +68,7 @@ body {
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: 1;
+    z-index: 0;
 
     transition: opacity 800ms ease, background-size 800ms ease;
 }
@@ -86,7 +95,6 @@ body {
     background-position: 0% -100%;
 }
 
-
 /*
     This is for the about page
 */
@@ -103,7 +111,7 @@ body {
     background: #4a4564;
     position: relative;
 }
-.container{
+.container-about{
     height: fit-content;
     width: 100%;
     padding: 0 8%;
@@ -133,20 +141,27 @@ nav{
 .nav-links li{
     display: inline-block;
     margin: 0 10px;
-    font-size: 1.5rem;
     position: relative;
 }
 
 .nav-links li a{
     text-decoration: none;
+    font-size: 1.5rem;
     color: #ffff;
     padding: 1px 0;
+    transition: opacity 400ms ease-out;
+}
+
+.nav-links li a i{
+    text-decoration: none;
+    color: #ffff;
+    padding: 0 8px;
 }
 
 .nav-links li a:hover{
     text-decoration: none;
     background: #eb42422d;
-    color: rgb(156, 156, 156);
+    opacity: 75%;
     border-radius: 3px;
 }
 
@@ -160,7 +175,7 @@ nav{
     left: 0;
     transition: width 400ms ease-out;
 }
-.nav-links li a:hover:after{
+.nav-links li a:hover::after{
     width: 100%;
 }
 
@@ -170,4 +185,24 @@ nav{
     padding: 10px 30px;
     border-radius: 3px;
     cursor: pointer;
+}
+.dropdown__menu{
+    display: none;
+}
+
+.container-about ul li:hover .dropdown__menu{
+    display: block;
+    position: absolute;
+    margin: 0 0;
+    padding-top: 10px;
+    background: #131b53d0;
+}
+
+.container-about ul li:hover .dropdown__menu ul{
+    display: block;
+    padding: 0 0;
+}
+
+.container-about ul li:hover .dropdown__menu ul li{
+    margin: 0 0;
 }
