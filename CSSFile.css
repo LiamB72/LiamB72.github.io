@@ -70,7 +70,7 @@ body {
     top: 0px;
     z-index: 0;
 
-    transition: opacity 800ms ease, background-size 800ms ease;
+    transition: opacity 500ms ease, background-size 500ms ease;
 }
 
 #menu-items:hover ~ #menu-bg-pattern {
@@ -78,7 +78,7 @@ body {
     opacity: 0.5;
     
 }
-
+/*
 #menu[data-active-index="0"] > #menu-bg-pattern {
     background-position: 0% -25%;
 }
@@ -94,6 +94,7 @@ body {
 #menu[data-active-index="3"] > #menu-bg-pattern {
     background-position: 0% -100%;
 }
+*/
 
 /*
     This is for the about page
