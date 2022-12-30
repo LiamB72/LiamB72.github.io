@@ -325,10 +325,16 @@ nav .content .links{
   padding: 10px;
 }
 
-#prep-info,#prep-info2{
+#prep-info{
   position: relative;
   left: 400px;
   bottom: 170px;
+  font-size: 16px;
+}
+#prep-info2{
+  position: relative;
+  left: 400px;
+  bottom: 145px;
   font-size: 16px;
 }
 
@@ -347,7 +353,7 @@ nav .content .links{
 }
 #image-2{
   position: relative;
-  bottom: 34vw;
+  bottom: 41.7vw;
   left: 65vw;
   width: 400px;
   height: 300px;
@@ -392,24 +398,43 @@ nav .content .links{
   }
 }
 @media screen and (max-width:500px){
-  #pate-pain-au-lait{
+  #bun{
     height: 460px;
     font-size: 11px;
     transition: font-size .2s ease;
   }
   #prep{
-    top: 28vw;
+    top: 29vw;
   }
   #prep-info{
-    font-size: 10px;
-    left: 195px;
+    font-size: 9.5px;
+    left: 185px;
     bottom: 110px;
   }
   #prep-detailed{
-    top: 11vw;
+    top: 9vw;
   }
   #image-1,#image-2{
-    bottom: 79.5vw;
+    bottom: 82.5vw;
+    left: .0001vw;
+    width: 200px;
+    height: 130px;
+  }
+  #cream{
+    height: 530px;
+    font-size: 11px;
+    transition: font-size .2s ease;
+  }
+  #prep-info2{
+    font-size: 9px;
+    left: 193px;
+    bottom: 110px;
+  }
+  #prep-detailed2{
+    top: 13vw;
+  }
+  #image-2{
+    bottom: 91vw;
     left: .0001vw;
     width: 200px;
     height: 130px;
