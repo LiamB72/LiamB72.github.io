@@ -345,7 +345,7 @@ nav .content .links{
 
 #image-1{
   position: relative;
-  bottom: 37.8vw;
+  bottom: 37.5vw;
   left: 60vw;
   width: 470px;
   height: 300px;
@@ -353,10 +353,10 @@ nav .content .links{
 }
 #image-2{
   position: relative;
-  bottom: 41.7vw;
-  left: 65vw;
-  width: 400px;
-  height: 300px;
+  bottom: 41vw;
+  left: 68vw;
+  width: 350px;
+  height: 250px;
   border-radius: 20px;
 }
 
