@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Fira Code", monospace;
 }
+
 body{
   background:#101318;
 }
@@ -284,5 +285,133 @@ nav .content .links{
     font-size: 18px;
     line-height: 30px;
     border-radius: 5px!important;
+  }
+}
+
+
+
+/* -------------------------           Board for Recipes -> Code <-           -------------------------*/
+
+.board-wrapper{
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  padding-top: 80px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #f2f2f2;
+}
+
+/* -------------------------          General Recipes -> Code <-           -------------------------*/
+#bun{
+  margin: 20px;
+  background: #2d3644;
+  height: 450px;
+  overflow: hidden;
+  transition: font-size .2s ease;
+  border-radius: 10px;
+}
+#cream{
+  margin: 20px;
+  background: #2d3644;
+  height: 500px;
+  overflow: hidden;
+  transition: font-size .2s ease;
+  border-radius: 10px;
+}
+
+#prep,#prep-info,#prep-detailed,#prep-detailed2,#image-1,#image-2{
+  position: relative;
+  padding: 10px;
+}
+
+#prep-info,#prep-info2{
+  position: relative;
+  left: 400px;
+  bottom: 170px;
+  font-size: 16px;
+}
+
+#prep-detailed,#prep-detailed2{
+  position: relative;
+  bottom: 80px;
+}
+
+#image-1{
+  position: relative;
+  bottom: 37.8vw;
+  left: 60vw;
+  width: 470px;
+  height: 300px;
+  border-radius: 20px;
+}
+#image-2{
+  position: relative;
+  bottom: 34vw;
+  left: 65vw;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width:900px){
+  #bun{
+    height: 260px;
+    font-size: 10px;
+    transition: font-size .2s ease;
+  }
+  #cream{
+    height: 310px;
+    font-size: 10px;
+    transition: font-size .2s ease;
+  }
+  #prep-info{
+    font-size: 10px;
+    left: 220px;
+    bottom: 110px;
+  }
+  #prep-info2{
+    font-size: 10px;
+    left: 235px;
+    bottom: 87px;
+  }
+  #prep-detailed2{
+    bottom: 7vw;
+  }
+  #image-1{
+    bottom: 44vw;
+    left: 66vw;
+    width: 200px;
+    height: 130px;
+  }
+  #image-2{
+    bottom: 46vw;
+    left: 64.5vw;
+    width: 200px;
+    height: 150px;
+  }
+}
+@media screen and (max-width:500px){
+  #pate-pain-au-lait{
+    height: 460px;
+    font-size: 11px;
+    transition: font-size .2s ease;
+  }
+  #prep{
+    top: 28vw;
+  }
+  #prep-info{
+    font-size: 10px;
+    left: 195px;
+    bottom: 110px;
+  }
+  #prep-detailed{
+    top: 11vw;
+  }
+  #image-1,#image-2{
+    bottom: 79.5vw;
+    left: .0001vw;
+    width: 200px;
+    height: 130px;
   }
 }
