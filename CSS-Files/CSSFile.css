@@ -1,0 +1,73 @@
+:root {
+    --background: #161b22;
+    --white: #f2f2f2;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+}
+
+#menu {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#menu-items {
+    margin-left: 8vw;
+    position: relative;
+    z-index: 2;
+}
+
+#menu-items:hover > .menu-item {
+    opacity: 0.3;
+    font-size: 2.5rem;
+    margin: 0;
+}
+#menu-items:hover > .menu-item:hover {
+    opacity: 1;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.menu-item {
+    display: block;
+    width: 400px;
+    height: 80px;
+    margin: 0;
+    color: var(--white);
+    font-size: 3rem;
+    font-family: "Ibarra Real Nova", serif;
+
+    
+    text-decoration: none;
+    padding: 0.25rem 0;
+    transition: opacity 400ms ease;
+    transition: font-size 100ms ease-out;
+}
+
+#menu-bg-pattern {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: radial-gradient(
+        rgba(115, 100, 255, 0.123) 9%,
+        transparent 9%
+    );
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+    
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+
+    transition: opacity 500ms ease, background-size 500ms ease;
+}
+
+#menu-items:hover ~ #menu-bg-pattern {
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
+    
+}
