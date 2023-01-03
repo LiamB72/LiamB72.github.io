@@ -518,7 +518,7 @@ nav .content .links{
     height: 200px;
   }
 }
-/* -------------------------          Pancake Recipes -> Code <-           -------------------------*/
+/* -------------------------          Triangles Recipes -> Code <-           -------------------------*/
 #triangles{
   margin: 20px;
   background: #2d3644;
@@ -589,7 +589,86 @@ nav .content .links{
   #prep-detailed-triangles{
     top: 9vw;
   }
-  #image-pancake{
+  #image-triangles{
+    bottom: 83vw;
+    left: 50vw;
+    width: 170px;
+    height: 200px;
+  }
+}
+
+/* -------------------------          scones Recipes -> Code <-           -------------------------*/
+#scones{
+  margin: 20px;
+  background: #2d3644;
+  height: 700px;
+  overflow: hidden;
+  transition: font-size .2s ease;
+  border-radius: 10px;
+}
+
+#prep-scones,#prep-info-scones,#prep-detailed-scones,#image-scones{
+  position: relative;
+  padding: 10px;
+}
+
+#prep-info-scones{
+  position: relative;
+  left: 400px;
+  bottom: 170px;
+  font-size: 16px;
+}
+
+#prep-detailed-scones{
+  position: relative;
+  bottom: 100px;
+}
+
+#image-scones{
+  position: relative;
+  bottom: 53vw;
+  left: 64.5vw;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width:900px){
+  #scones{
+    height: 280px;
+    font-size: 10px;
+    transition: font-size .2s ease;
+  }
+  #prep-info-scones{
+    font-size: 10px;
+    left: 220px;
+    bottom: 110px;
+  }
+  #image-scones{
+    bottom: 45vw;
+    left: 70vw;
+    width: 150px;
+    height: 170px;
+  }
+}
+@media screen and (max-width:500px){
+  #scones{
+    height: 490px;
+    font-size: 11px;
+    transition: font-size .2s ease;
+  }
+  #prep-scones{
+    top: 25vw;
+  }
+  #prep-info-scones{
+    font-size: 9.5px;
+    left: 3px;
+    bottom: 110px;
+  }
+  #prep-detailed-scones{
+    top: 9vw;
+  }
+  #image-scones{
     bottom: 83vw;
     left: 50vw;
     width: 170px;
