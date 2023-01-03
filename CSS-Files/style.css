@@ -163,19 +163,19 @@ nav .content .links{
 .content .links ul ul.item2{
   position: absolute;
   top: 0;
-  right: calc(-100% + 8.95vw);
+  right: calc(-100% + 8vw);
 }
 
 .content .links ul ul.item3{
   position: absolute;
   top: 0;
-  right: calc(-100% + 78px);
+  right: calc(-100% + 70px);
 }
 
 .content .links ul ul.item4{
   position: absolute;
   top: 0;
-  right: calc(-100% + 67px);
+  right: calc(-100% + 59px);
 }
 
 .content .links ul li{
