@@ -1,0 +1,7 @@
+.btn-outline-light {
+  --bs-btn-hover-color: #b8b8b8;
+  --bs-btn-active-color: #b8b8b8;
+}
+.gx-8{
+    --bs-gutter-x: 8rem;
+}
